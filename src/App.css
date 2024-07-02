@@ -1,38 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;800&display=swap');
+
 .App {
+  width: 100vw;
+  height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #262626;
+  overflow-x: hidden;
+}
+
+.App .center {
+  display: flex;
+  width: 1000px;
+  height: min-content;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  background-color: #FFFFFF
 }
 
-.App-link {
-  color: #61dafb;
+.App .title {
+  margin: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  text-align: left;
+  font-size: 5vh;
+  color: #262626
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .subtitle {
+  height: 3.5vh;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  font-size: 2vh;
+  color: #262626
+}
+
+.App .game-container {
+  flex: 0;
+  aspect-ratio: 6/5;
+}
+
+.App .game {
+  width: 800px;
+  height: 960px;
+}
+
+.App .description {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  min-width: 960px;
+  text-align: start;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2vh;
+}
+
+a:link {
+  color: rgb(221, 107, 0);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(221, 107, 0);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(221, 63, 0);
+}
+
+/* selected link */
+a:active {
+  color: rgb(221, 0, 0);
 }
